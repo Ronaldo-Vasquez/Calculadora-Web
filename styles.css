@@ -46,7 +46,7 @@ section label{
     display: block;
     width: auto;
     height: 80%;
-    box-sizing: border-box;
+    box-sizing: content-box;
     border: 0.5px;
     text-align: center;
     border-color: black;
@@ -57,8 +57,8 @@ section .cuerpo .operaciones{
     margin:5px;
     padding: 5px;
     width: auto;
-    height: 20%;
-    box-sizing: border-box;
+    height: 12%;
+    box-sizing: content-box;
 }
 
 section .cuerpo .operaciones button{
