@@ -67,90 +67,55 @@ function init (){
        updateDisplay();
     }
     suma.onclick = function(){
-        opDisplay.push("9");
+        opDisplay.push("+");
        updateDisplay();
     }
     resta.onclick = function(){
-        opDisplay.push("9");
+        opDisplay.push("-");
        updateDisplay();
     }
     multi.onclick = function(){
-        opDisplay.push("9");
+        opDisplay.push("*");
        updateDisplay();
     }
     divi.onclick = function(){
-        opDisplay.push("9");
+        opDisplay.push("/");
        updateDisplay();
     }
     limpiar.onclick = function(){
-        opDisplay = [""];
-        start = true;
+        clean();  
+    }
+
+    borrar.onclick = function(){
+        delet();
+    }
+
+}
+
+function updateDisplay(){//actualiza el la vista del ususario
+    display.textContent = opDisplay.join("");
+    
+    if (start === true) {//para controlar el cero al borrar la info
+        display.textContent = "0";
+        start = false;
+    }
+}
+
+function clean() {
+    opDisplay = [];
+    start = true;
+    updateDisplay(); 
+}
+
+function delet() {
+    if (opDisplay.length<2 || opDisplay === null || opDisplay === undefined) {
+        clean();
+    } else {
+        opDisplay.pop();
         updateDisplay();
-        
-        
-    }
-    
-    
-
-
-
-}
-
-function updateDisplay(){//actualiza el la vista del ususario
-    display.textContent = opDisplay.join("");
-    
-    
-    if (start === true) {//para controlar el cero al borrar la info
-        display.textContent = "0";
-        start = false;
     }
 }
 
 
-function updateDisplay(){//actualiza el la vista del ususario
-    display.textContent = opDisplay.join("");
-    
-    
-    if (start === true) {//para controlar el cero al borrar la info
-        display.textContent = "0";
-        start = false;
-    }
-}
 
-function updateDisplay(){//actualiza el la vista del ususario
-    display.textContent = opDisplay.join("");
-    
-    
-    if (start === true) {//para controlar el cero al borrar la info
-        display.textContent = "0";
-        start = false;
-    }
-}
 
-function updateDisplay(){//actualiza el la vista del ususario
-    display.textContent = opDisplay.join("");
-    
-    
-    if (start === true) {//para controlar el cero al borrar la info
-        display.textContent = "0";
-        start = false;
-    }
-}
-function updateDisplay(){//actualiza el la vista del ususario
-    display.textContent = opDisplay.join("");
-    
-    
-    if (start === true) {//para controlar el cero al borrar la info
-        display.textContent = "0";
-        start = false;
-    }
-}
-function updateDisplay(){//actualiza el la vista del ususario
-    display.textContent = opDisplay.join("");
-    
-    
-    if (start === true) {//para controlar el cero al borrar la info
-        display.textContent = "0";
-        start = false;
-    }
-}
