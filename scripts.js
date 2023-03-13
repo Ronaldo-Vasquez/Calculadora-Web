@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-const numeroBotones = document.querySelectorAll('[data-number');
-=======
->>>>>>> origin/Desarrollo_Funcionalidades
 var operacionA;
 var operacionB;
 var operacion;
@@ -87,47 +83,24 @@ function init (){
        updateDisplay();
     }
     limpiar.onclick = function(){
-<<<<<<< HEAD
-        opDisplay = [""];
-        start = true;
-        updateDisplay();
-        
-        
-    }
-    
-    
-
-
-=======
         clean();  
     }
 
     borrar.onclick = function(){
         delet();
     }
->>>>>>> origin/Desarrollo_Funcionalidades
 
 }
 
 function updateDisplay(){//actualiza el la vista del ususario
     display.textContent = opDisplay.join("");
     
-<<<<<<< HEAD
-    
-=======
->>>>>>> origin/Desarrollo_Funcionalidades
     if (start === true) {//para controlar el cero al borrar la info
         display.textContent = "0";
         start = false;
     }
 }
 
-<<<<<<< HEAD
-function opMatematicas(){
-
-}
-
-=======
 function clean() {
     opDisplay = [];
     start = true;
@@ -146,4 +119,3 @@ function delet() {
 
 
 
->>>>>>> origin/Desarrollo_Funcionalidades
