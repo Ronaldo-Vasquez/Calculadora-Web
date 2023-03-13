@@ -1,3 +1,4 @@
+const numeroBotones = document.querySelectorAll('[data-number');
 var operacionA;
 var operacionB;
 var operacion;
@@ -67,19 +68,19 @@ function init (){
        updateDisplay();
     }
     suma.onclick = function(){
-        opDisplay.push("9");
+        opDisplay.push("+");
        updateDisplay();
     }
     resta.onclick = function(){
-        opDisplay.push("9");
+        opDisplay.push("-");
        updateDisplay();
     }
     multi.onclick = function(){
-        opDisplay.push("9");
+        opDisplay.push("*");
        updateDisplay();
     }
     divi.onclick = function(){
-        opDisplay.push("9");
+        opDisplay.push("/");
        updateDisplay();
     }
     limpiar.onclick = function(){
@@ -104,5 +105,9 @@ function updateDisplay(){//actualiza el la vista del ususario
         display.textContent = "0";
         start = false;
     }
+}
+
+function opMatematicas(){
+
 }
 
